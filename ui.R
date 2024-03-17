@@ -73,7 +73,7 @@ ui <- fluidPage(
              #### tab 2: Trip 1 ####
              tabPanel(title = "Winter Katahdin 2024",
                       
-                      setBackgroundImage(src = "https://lh3.googleusercontent.com/pw/AP1GczNQcw1k5hnyengBlr6_4X1kbkUWSFkp1CsTnbobGQQBg0SEdhtFZccVpoSufBxLkr5l3d5UkDk7WHI0WqwryjSKDFntYib2BBLT_xngPYtcsWAs6I2cEH1gNJFwn_dq3yEOI_nJVQoBfQ2KHVK2mu8ca3k0xQabvuGwGMKfFSNb3NF-atGWsM8suWwexm2w4Sw8zjVH_d-1-trPc1DixW3nUtXy3dwXB7-ZRqaUbteI4jrTrO8qSF_O_RP0A2RaBaKa2i7FxKBcXmS4PzB-ip8Ihb8l5j6Hm2texibi6pu437-EiK8YMipdeT44J8TtP_sFkcsLGtaEWOI_6mp_FB4TF2PsvrXunaKOqktRKq5zE9WncQN-bHkYDHa7bHGNfps8f5_WQnHuhDnKw-sanVGwljUAfm6SLSviQksK4XaW0ObgVVAsIS0iEOvChs0NPuXxgApnzXZqwcpCM5AJT3yinGGpU0s0zvYh9uKIoACtptIyPxhnPLq64fEWeGrxjJhx4v12LiqCkDzh0gk5Ac4qM0qwvE_C_oXxNQiyEjhR4QE4rIxjyZgbNYyK4WnqLphAqAXelIhbmV4oax8mCULMoAlzUS_0T7thSCYERSH9c_w111xWOaEDJd9Hi3bDIX77DVb_WS1SUy9VJMwzY1w1J0uTpq3-LcIVOaqs9-0A_N9Tt6YnLilWqUa9NIjXD8CoobWGUZEL7fArOVg4nVWuK0OPPngpD1lpkZzE5Vb5t2E2R6DOjlRuCfOHik-GMlANjtIW3KPKS1YZqRWKhtstv0BXBDqIKn-qsfk12ria-VXQfH0fNC0zEUyKQzXVMRhotRmpdnkyMhOxnLELYpGWOdRJSHMM3YePX7zHyB3Dh0xBhFwNJ2iHH1XBPaF3e0EYiIzSyUY3kr-2o1DwtB3FPNLdhKxcTXUX4Zm-z-jCk87LYrweKj1OvaDAF0U=w827-h827-s-no-gm?authuser=0"),
+                      setBackgroundImage(src = "contour_background.jpg"),
                       
                       titlePanel("Winter Katahdin 2024"),
                       
