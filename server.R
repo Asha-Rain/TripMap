@@ -49,28 +49,22 @@ server = function(input, output){
   
   output$png2 <- renderImage({
     
-    filename <- normalizePath(file.path("png2.png"))
-    
-    list(src = filename, width = "100%")
+    list(src = "./www/png2.png", width = "100%")
   }, deleteFile = FALSE)
   
   output$png3 <- renderImage({
     
-    filename <- normalizePath(file.path("png3.png"))
-    
-    list(src = filename, width = "100%")
+    list(src = "./www/png3.png", width = "100%")
   }, deleteFile = FALSE)
   
   output$png4 <- renderImage({
     
-    filename <- normalizePath(file.path("png4.png"))
-    
-    list(src = filename, width = "100%")
+    list(src = "./www/png4.png", width = "100%")
   }, deleteFile = FALSE)
   
   output$png5 <- renderImage({
     
-    filename <- normalizePath(file.path("png5.png"))
+    filename <- normalizePath(file.path("./www/png5.png"))
     
     list(src = filename, width = "100%")
   }, deleteFile = FALSE)
