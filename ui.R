@@ -1,7 +1,14 @@
 #### Define UI ####
 ui <- fluidPage(
   
-  navbarPage(title = 'Asha Rain Designs',
+  navbarPage(title = 'Asha Rain Data & Design',
+             # Routes & Revelations by Asha Rain Designs
+             # Asha Rain Data & Design
+             # Asha Rain: Rain Date Data & Design
+             # Rain Date Designs
+             # Rainy Day Data & Designs
+             
+             
              ####Landing page CSS ####
              tags$style(".landing-wrapper {}",
                         
@@ -11,15 +18,23 @@ ui <- fluidPage(
                       }",
                         
                         ".landing-wrapper .background-content{
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        grid-row-gap: 0;
-                        grid-row-columns: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
                       }",
                         
+                        #display: grid;
+                        #grid-template-columns: 50% 50%;
+                        #grid-row-gap: 0;
+                        #grid-row-columns: 0
+                        
                         ".landing-wrapper .background-content img{
-                        display: block;
-                        width: 100%;
+                              display: block;
+                              width: auto; /* Adjust image width as needed */
+                              max-width: 100%; /* Ensure image doesn't exceed container width */
+                              max-height: 100%; /* Ensure image doesn't exceed container height */
+                              height: auto; /* Maintain aspect ratio */
                       }",
                         
                         ".landing-wrapper .foreground-content{
@@ -51,13 +66,13 @@ ui <- fluidPage(
                                # child element 1: images
                                tags$div(class="landing-block background-content",
                                         # top left
-                                        img(src=top_left),
+                                        img(src=home)),
                                         # top right
-                                        img(src=top_right),
+                                       ## img(src=top_right),
                                         # bottom left
-                                        img(src=bottom_left), 
+                                      ##  img(src=bottom_left), 
                                         # bottom right
-                                        img(src=bottom_right)),
+                                      ##  img(src=bottom_right)),
                                
                                # child element 2: content
                                tags$div(class="landing-block foreground-content",
@@ -68,29 +83,44 @@ ui <- fluidPage(
                                                         trips and adventures via maps, 
                                                         data visualization, and story."),
                                                  tags$p("Enjoy!"),
-                                                 tags$p("- Asha"))))),
+                                                 tags$p("- Asha Rain"))))),
              
              #### tab 2: Trip 1 ####
              tabPanel(title = "Winter Katahdin 2024",
                       
-                      setBackgroundImage(src = "contour_background.jpg"),
+                      setBackgroundImage(src = "contour_background2.jpg"),
                       
-                      titlePanel("Winter Katahdin 2024"),
+                      titlePanel("  Winter Katahdin 2024"),
                       
-                      sidebarLayout(sidebarPanel(
-                        radioButtons("Explore", label = h3("Explore:"),
-                                     choices = list("Route Map" = 1, "Photos" = 2), 
-                                     selected = 1),
-                        width = 2
-                      ),
+                  #    sidebarLayout(
+                        #sidebarPanel(
+                       # radioButtons("Explore", label = h3("Explore:"),
+                        #             choices = list("Route Map" = 1, "Photos" = 2), 
+                         #            selected = 1),
+                        #width = 2
+                    #  ),
                       
-                      mainPanel(width = 8,
+                      mainPanel(width = 12,
                                 tabsetPanel(
-                                  tabPanel("Day 1", br(), imageOutput("png1"), br(), leafletOutput('map1'), g1), 
-                                  tabPanel("Day 2", br(), imageOutput("png2"), br(), leafletOutput('map2'), g2), 
-                                  tabPanel("Day 3", br(), imageOutput("png3"), br(), leafletOutput('map3'), g3),
-                                  tabPanel("Day 4", br(), imageOutput("png4"), br(), leafletOutput('map4'), g4),
-                                  tabPanel("Day 5", br(), imageOutput("png5"), br(), leafletOutput('map5'), g5)))
-                      
-                      )
-             )))
+                                  tabPanel("Day 1", br(), fluidRow(
+                                    column(width = 8, imageOutput("png1")),
+                                    column(width = 4, leafletOutput('map1'))), g1),
+                                  
+                                  tabPanel("Day 2", br(), fluidRow(
+                                    column(width = 8, imageOutput("png2")),
+                                    column(width = 4, leafletOutput('map2'))), g2), 
+                                  
+                                  tabPanel("Day 3", br(), fluidRow(
+                                    column(width = 8, imageOutput("png3")),
+                                    column(width = 4, leafletOutput('map3'))), g3), 
+                                  
+                                  tabPanel("Day 4", br(), fluidRow(
+                                    column(width = 8, imageOutput("png4")),
+                                    column(width = 4, leafletOutput('map4'))), g4), 
+                                  
+                                  tabPanel("Day 5", br(), fluidRow(
+                                    column(width = 8, imageOutput("png5")),
+                                    column(width = 4, leafletOutput('map5'))), g5)))
+                                          ) #tabpanel
+                              ) #navbarpage
+                ) #fluidpage
